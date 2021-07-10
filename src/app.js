@@ -4,6 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const geocode = require('../utils/geocode')
 const forecast = require('../utils/forecast')
+const port = process.env.PORT || 3000
 
 constDirpath = path.join(__dirname,'../public')
 viewPath = path.join(__dirname,'../templates/views')
@@ -76,6 +77,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server lis listening 3000 port')
+app.listen(port,()=>{
+    console.log('Server lis listening '+ port +' port')
 })
