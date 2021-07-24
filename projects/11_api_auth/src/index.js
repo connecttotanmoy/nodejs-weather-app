@@ -11,5 +11,5 @@ app.use(userRouter)
 app.use(taskRouter)
 
 app.listen(port,()=>{
-    console.log('App lis listening '+ port + ' port')
+    console.log('App is listening '+ port + ' port')
 })
